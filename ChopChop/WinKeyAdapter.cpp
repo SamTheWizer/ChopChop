@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "WinKeyAdapter.h"
+#include <iostream>
 
 WinKeyAdapter::WinKeyAdapter()
 {	
@@ -65,8 +66,9 @@ WinKeyAdapter::~WinKeyAdapter()
 
 void WinKeyAdapter::receiveCommand(char* cmd)
 {
-	int x = sizeof(cmd);
-	for (int i = 0; i < (sizeof(cmd)/4); i++)
+	int length = strlen(cmd);
+	//std::cout << length << " : " << cmd << "\n";
+	for (int i = 0; i < length; i++)
 	{
 		//Check for escape sequence ('&?')
 		if (cmd[i] == '&' && cmd[i + 1] == '?')

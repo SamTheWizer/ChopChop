@@ -23,6 +23,7 @@ void MKBridge::readMidi(int midiValue, int action)
 
 void MKBridge::processKeyUp(int midiValue)
 {
+	//Key is in the base octave
 	if (midiValue - startOfRange < 12)
 	{
 		baseValue /= noteToPrime(midiValue % 12);

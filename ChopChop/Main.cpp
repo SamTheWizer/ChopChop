@@ -38,7 +38,7 @@ int main() {
 	while (active < 60) 
 	{
 		
-		active++;
+		//active++;
 		Sleep(500);
 	}
 

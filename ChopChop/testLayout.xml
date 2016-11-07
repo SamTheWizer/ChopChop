@@ -95,6 +95,11 @@
 	</basemap>
 
 	<basemap value="2">
+		<trigger key="3" value=" ">
+		<trigger key="7" value="&?BSP">
+		<trigger key="119" value="&?DEL">
+		<trigger key="17" value=".">
+
 		<trigger key="2" value="t">
 	`	<trigger key="22" value="th">
 		<trigger key="418" value="the">
@@ -158,6 +163,10 @@
 	</basemap>
 	
 	<basemap value="38">
+		<trigger key="3" value=" ">
+		<trigger key="7" value="&?BSP">
+		<trigger key="119" value="&?DEL">
+		<trigger key="17" value=".">
 		<trigger key="2" value="e">
 		<trigger key="22" value="en">
 		<trigger key="418" value="ent">
